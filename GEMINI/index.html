@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Rescue Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-paw"></i> Pet Rescue Haven</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#pets">Adoptable Pets</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#donate" class="btn">Donate</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h2>Give a Loving Home to a Rescued Pet</h2>
+                <p>Browse our adorable pets waiting for their forever families.</p>
+                <a href="#pets" class="btn btn-primary">View Adoptable Pets</a>
+            </div>
+        </section>
+
+        <section id="pets" class="pets-section">
+            <div class="container">
+                <h2>Our Adoptable Pets</h2>
+                <div id="pet-list" class="pet-grid">
+                    </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About Pet Rescue Haven</h2>
+                <p>We are a non-profit organization dedicated to rescuing, rehabilitating, and rehoming abandoned and neglected animals. Our mission is to find loving forever homes for every animal that comes into our care.</p>
+                <p>Since our inception in 20XX, we have successfully placed hundreds of pets with their new families. We rely on the generosity of our donors and the hard work of our volunteers to continue our vital work.</p>
+                <p>Every adoption helps us save another life. Thank you for considering adopting from us!</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Have questions? We'd love to hear from you!</p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="donate" class="donate-section">
+            <div class="container">
+                <h2>Support Our Cause</h2>
+                <p>Your generous donation helps us provide food, shelter, medical care, and love to animals in need. Every rupee makes a difference!</p>
+                <button class="btn btn-primary">Donate Now</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Pet Rescue Haven. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
