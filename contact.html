@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Rescue- Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-paw"></i> PetRescue</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="donate.html" class="btn">Donate</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="contact-main">
+    <div class="container">
+        <h2 style="color: blueviolet;">Report an Injured Pet</h2>
+        <form id="rescueForm">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                <large class="note">Please enter a 10-digit phone number</large>
+            </div>
+
+            <div class="form-group">
+                <label for="location">Location where you see the injured pet:</label>
+                <input type="text" id="location" name="location" placeholder="e.g., Near Sector 14 Market, Rohtak" required>
+            </div>
+
+            <div class="form-group">
+                <label for="pet-type">Type of Pet:</label>
+                <select id="pet-type" name="pet-type" required>
+                    <option value="">-- Select Pet Type --</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="bird">Bird</option>
+                    <option value="cow">Cow</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="media">Upload Video/Photo(Optional):</label>
+                <input type="file" id="media" name="media[]" accept="image/,video/" multiple>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    </main>
+    <footer>
+        <div class="container">
+            <h1>Thank you for giving your precious time</h1>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+  <script src="script.js"></script>
+</body>
+</html>
