@@ -464,3 +464,64 @@ strong{
 .submit-btn:hover {
   background-color: #218838;
 }
+
+/* Responsive adjustments for screens under 768px */
+@media (max-width: 768px) {
+  
+  /* --- 1. NAVBAR FIX --- */
+  header .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-direction: column; /* Stacks navigation links vertically */
+    align-items: center;
+    padding: 0;
+    gap: 12px;               /* Adds spacing between links */
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  /* --- 2. ABOUT PAGE PILLARS ALIGNMENT FIX --- */
+  .about-section .pillar {
+    display: flex;          /* Places icon and text side-by-side */
+    align-items: flex-start;/* Aligns icon with the top line of text */
+    justify-content: flex-start;
+    text-align: left;       /* Keeps text cleanly left-aligned */
+    gap: 15px;              /* Spacing between emoji icon and text */
+    margin-bottom: 20px;
+    padding: 0 15px;
+  }
+
+  .about-section .pillar span {
+    font-size: 24px;
+    line-height: 1.2;
+    flex-shrink: 0;         /* Prevents icons from squishing */
+  }
+
+  .about-section .pillar p {
+    margin: 0;
+    font-size: 18px;        /* Scaling down paragraph text slightly for small screens */
+  }
+
+  /* Image scaling for hero section */
+  .hero-content img {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
