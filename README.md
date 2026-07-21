@@ -43,6 +43,7 @@ PetRescue/
 ├── donate.html       # Support & shelter donation hub
 ├── style.css         # Main stylesheet & media queries
 └── README.md         # Project documentation
+```
 
 ## 💻 How to Run Locally
 
