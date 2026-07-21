@@ -468,20 +468,21 @@ strong{
 /* Responsive adjustments for screens under 768px */
 @media (max-width: 768px) {
   
-  /* --- NAVBAR HORIZONTAL WITH SPACING --- */
+  /* --- 1. FORCE HEADER & NAV TO STAY HORIZONTAL --- */
   header .container {
-    flex-direction: column !important; /* Logo on top, links below */
+    flex-direction: row !important;      /* Keeps Logo on left, Nav on right */
+    justify-content: space-between !important;
     align-items: center !important;
-    gap: 15px !important;
+    flex-wrap: wrap !important;          /* Wraps neatly if screen gets tiny */
+    padding: 10px 15px !important;
   }
 
   nav ul {
     display: flex !important;
-    flex-direction: row !important; /* Keeps links side-by-side */
-    flex-wrap: wrap !important;      /* Allows wrapping if screen is very narrow */
-    justify-content: center !important;
+    flex-direction: row !important;      /* Forces links in a single row */
+    flex-wrap: wrap !important;
     align-items: center !important;
-    gap: 15px 20px !important;      /* Adds healthy space between each link */
+    gap: 12px 18px !important;           /* Space between Home, Volunteers, etc. */
     padding: 0 !important;
     margin: 0 !important;
   }
@@ -491,33 +492,37 @@ strong{
   }
 
   nav ul li a {
-    font-size: 15px !important;     /* Slightly adjusts font size to fit neatly */
-    white-space: nowrap !important;  /* Prevents text from breaking mid-word */
+    font-size: 14px !important;          /* Keeps text clean and compact */
+    white-space: nowrap !important;     /* Prevents breaking words onto new lines */
   }
 
-  /* --- 2. ABOUT PAGE PILLARS ALIGNMENT FIX --- */
-  .about-section .pillar {
-    display: flex;          /* Places icon and text side-by-side */
-    align-items: flex-start;/* Aligns icon with the top line of text */
-    justify-content: flex-start;
-    text-align: left;       /* Keeps text cleanly left-aligned */
-    gap: 15px;              /* Spacing between emoji icon and text */
-    margin-bottom: 20px;
-    padding: 0 15px;
+  .btn {
+    padding: 6px 14px !important;        /* Compact Donate button */
+    font-size: 14px !important;
   }
 
-  .about-section .pillar span {
-    font-size: 24px;
-    line-height: 1.2;
-    flex-shrink: 0;         /* Prevents icons from squishing */
+  /* --- 2. ABOUT PAGE PILLARS ALIGNMENT --- */
+  .about-section .pillar,
+  .pillar {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    gap: 15px !important;
+    margin-bottom: 20px !important;
   }
 
-  .about-section .pillar p {
-    margin: 0;
-    font-size: 18px;        /* Scaling down paragraph text slightly for small screens */
+  .pillar span {
+    font-size: 24px !important;
+    flex-shrink: 0 !important;
   }
 
-  /* Image scaling for hero section */
+  .pillar p {
+    margin: 0 !important;
+    font-size: 16px !important;
+  }
+
+  /* Hero section image fix for index.html */
   .hero-content img {
     width: 100% !important;
     height: auto !important;
