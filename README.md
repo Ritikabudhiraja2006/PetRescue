@@ -47,12 +47,10 @@ PetRescue/
 ## 💻 How to Run Locally
 
 1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/ritikabudhiraja2006/PetRescue.git](https://github.com/ritikabudhiraja2006/PetRescue.git)
+   `git clone https://github.com/ritikabudhiraja2006/PetRescue.git`
 
 2. **Navigate into the project directory:**
-   ```bash
-   cd PetRescue
+   `cd PetRescue`
 
 3. **Open in browser:**
    * Double-click `index.html` to open it in your web browser.
