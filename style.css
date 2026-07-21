@@ -468,22 +468,31 @@ strong{
 /* Responsive adjustments for screens under 768px */
 @media (max-width: 768px) {
   
-  /* --- 1. NAVBAR FIX --- */
+  /* --- NAVBAR HORIZONTAL WITH SPACING --- */
   header .container {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    flex-direction: column !important; /* Logo on top, links below */
+    align-items: center !important;
+    gap: 15px !important;
   }
 
   nav ul {
-    flex-direction: column; /* Stacks navigation links vertically */
-    align-items: center;
-    padding: 0;
-    gap: 12px;               /* Adds spacing between links */
+    display: flex !important;
+    flex-direction: row !important; /* Keeps links side-by-side */
+    flex-wrap: wrap !important;      /* Allows wrapping if screen is very narrow */
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 15px 20px !important;      /* Adds healthy space between each link */
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
   nav ul li {
-    margin: 5px 0;
+    margin: 0 !important;
+  }
+
+  nav ul li a {
+    font-size: 15px !important;     /* Slightly adjusts font size to fit neatly */
+    white-space: nowrap !important;  /* Prevents text from breaking mid-word */
   }
 
   /* --- 2. ABOUT PAGE PILLARS ALIGNMENT FIX --- */
