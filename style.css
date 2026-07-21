@@ -21,6 +21,9 @@ body {
 
 /* Header & Navigation */
 header {
+    position: sticky;
+    top:0;
+    z-index: 1000;
     background: #ad5f3b;
     color: #fff;
     padding: 20px 0;
