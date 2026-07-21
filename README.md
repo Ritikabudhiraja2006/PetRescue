@@ -43,3 +43,28 @@ PetRescue/
 ├── donate.html       # Support & shelter donation hub
 ├── style.css         # Main stylesheet & media queries
 └── README.md         # Project documentation
+
+## 💻 How to Run Locally
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/ritikabudhiraja2006/PetRescue.git](https://github.com/ritikabudhiraja2006/PetRescue.git)
+
+2. **Navigate into the project directory:**
+   ```bash
+   cd PetRescue
+
+3. **Open in browser:**
+   * Double-click `index.html` to open it in your web browser.
+   * Or open the folder in **VS Code** and click **Go Live**.
+
+
+
+
+
+
+
+
+
+
+
